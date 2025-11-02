@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal - User List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <h1>Admin Database</h1>
+            <a href="./user/add" class="btn">Add User</a>
+        </div>
+        <div class="search-bar">
+            <form method="GET" action="{{ url_for('website_routes.route_home') }}">
+                <input type="text" name="query" value="{{ request.args.get('query', '') }}" placeholder="Search users...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <form method="POST">
+            <select id="sortbtn" name="sortbtn">
+                <option>Sort</option>
+                <option value="default">All</option>
+                <option value="SALES">Sales</option>
+                <option value="ADMIN">Admin</option>
+                <option value="USER">User</option>
+            </select>
+        </form>
+        <table>
+            <tr>
+                <th>User Id</th>
+                <th>User Name</th>
+                <th>User Credits</th>
+                <th>User Role</th>
+            </tr>
+            {% for user in users %}
+            <tr>
+                <td><a href="./user/{{ user.id }}"
+                        style="
+                        {% if user.role == 'ADMIN' %}color: red;
+                        {% elif user.role == 'SALES' %}color: #FF00FF;
+                        {% endif %}">{{ user.id }}
+                    </a>
+                </td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.credits }}</td>
+                <td>{{ user.role }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <script>
+        document.getElementById("sortbtn").addEventListener("change", function() {
+            this.form.submit();
+        });
+    </script>
+
+</body>
+</html>

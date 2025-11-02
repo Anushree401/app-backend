@@ -1,0 +1,38 @@
+[
+    {
+      "id": "1",
+      "name": "10",
+      "points": 10,
+      "description": "Allocate 10 points"
+    },
+    {
+      "id": "2",
+      "name": "20",
+      "points": 20,
+      "description": "Allocate 20 points"
+    },
+    {
+      "id": "3",
+      "name": "30",
+      "points": 30,
+      "description": "Allocate 30 points"
+    },
+    {
+      "id": "4",
+      "name": "40",
+      "points": 40,
+      "description": "Allocate 40 points"
+    },
+    {
+      "id": "5",
+      "name": "50",
+      "points": 50,
+      "description": "Allocate 50 points"
+    },
+    {
+      "id": "6",
+      "name": "60",
+      "points": 60,
+      "description": "Allocate 60 points"
+    }
+]

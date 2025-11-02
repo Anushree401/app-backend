@@ -1,0 +1,64 @@
+[
+    {
+        "id": "1",
+        "name": "Gamer's Street",
+        "price": "100 pts",
+        "points": 100,
+        "description": "Enjoy a delicious gaming-themed meal and earn points!",
+        "image_url":"https://ctrl-shift.taqneeqfest.com/gift.png"
+    },
+
+    {
+        "id": "2",
+        "name": "Mixed Culture Pizzeria",
+        "price": "150 pts",
+        "points": 150,
+        "description": "Savor a fusion of flavors with our special pizzas.",
+        "image_url": "https://ctrl-shift.taqneeqfest.com/gift.png"
+    },
+
+    {
+        "id": "3",
+        "name": "Interview Buddy",
+        "price": "50 pts",
+        "points": 50,
+        "description": "Get expert interview guidance and ace your next job!",
+        "image_url": "https://ctrl-shift.taqneeqfest.com/interview-buddy.png"
+    },
+
+    {
+        "id": "4",
+        "name": "OneUp",
+        "price": "350 pts",
+        "points": 350,
+        "description": "Refresh, Recharge, Resurge with OneUp",
+        "image_url": "https://ctrl-shift.taqneeqfest.com/oneup.jpeg"
+    },
+
+    {
+        "id": "5",
+        "name": "Brew Baaba",
+        "price": "150 pts",
+        "points": 150,
+        "description": "Get exciting discounts at Brew Baba.",
+        "image_url": "https://ctrl-shift.taqneeqfest.com/brewbaba.jpeg"
+    },
+
+    {
+        "id": "6",
+        "name": "Gamer's Street",
+        "price": "100 pts",
+        "points": 100,
+        "description": "Enjoy a delicious gaming-themed meal and earn points!",
+        "image_url":"https://ctrl-shift.taqneeqfest.com/gift.png"
+    },
+
+    {
+        "id": "7",
+        "name": "Belgian Waffle",
+        "price": "300 pts",
+        "points": 300,
+        "description": "Get 20% off on your next order at Belgian Waffle.",
+        "image_url":"https://ctrl-shift.taqneeqfest.com/belgianwaffle.jpeg"
+    }
+]
