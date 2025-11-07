@@ -11,6 +11,8 @@ from routes.auth_routes import auth_router
 from routes.website_routes import website_router
 from routes.data_routes import data_router
 from routes import leaderboard_routes
+from routes import credit_history_routes
+import uvicorn
 
 ADMIN_PATH = os.getenv("ADMIN_PORTAL") or "/admin"
 
@@ -37,6 +39,7 @@ app.include_router(user_router, prefix="/user", tags=["users"])
 app.include_router(auth_router, tags=["auth"])
 app.include_router(data_router, tags=["data"])
 app.include_router(leaderboard_routes.router)
+app.include_router(credit_history_routes.router)
 
 @app.get('/')
 async def home():
@@ -51,6 +54,5 @@ async def static_from_root(request: Request):
     return FileResponse(f"static/{filename}")
 
 if __name__ == '__main__':
-    import uvicorn
     port = int(os.getenv('PORT', 8000))
     uvicorn.run("app:app", host="0.0.0.0", port=port, reload=True)
